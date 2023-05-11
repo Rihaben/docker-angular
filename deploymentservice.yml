@@ -7,8 +7,8 @@ spec:
   selector:
     app: angular-frontend
   ports:
-    - port: 8000
-      targetPort: 8000
+    - port: 4200
+      targetPort: 4200
       nodePort: 30014
 ---
 apiVersion: apps/v1
@@ -31,4 +31,4 @@ spec:
         - name: flutter-web
           image: rihabbennour/angular-frontend:latest
           ports:
-            - containerPort: 8000
+            - containerPort: 4200
